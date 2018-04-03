@@ -1,6 +1,6 @@
 controller_list:
   - name: "left_arm"
-    action_ns: joint_trajectory_action
+    action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
     joints:
       - yumi_joint_1_l
@@ -11,7 +11,7 @@ controller_list:
       - yumi_joint_5_l
       - yumi_joint_6_l
   - name: "right_arm"
-    action_ns: joint_trajectory_action
+    action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
     joints:
       - yumi_joint_1_r

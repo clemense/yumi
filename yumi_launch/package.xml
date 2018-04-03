@@ -49,6 +49,11 @@
   <run_depend>yumi_hw</run_depend>
   <run_depend>yumi_moveit_config</run_depend>
   <run_depend>yumi_support</run_depend>
+  <run_depend>position_controllers</run_depend>
+  <run_depend>joint_state_controller</run_depend>
+  <run_depend>joint_trajectory_controller</run_depend>
+  <run_depend>controller_manager</run_depend>
+  <run_depend>yumi_moveit_config</run_depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->

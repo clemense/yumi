@@ -39,7 +39,8 @@
     <arg name="moveit_warehouse_database_path" value="$(arg db_path)"/>
   </include>
 
-<arg name="controllers" default="joint_state_controller joint_trajectory_pos_controller left_arm right_arm"/>
+<!--arg name="controllers" default="joint_state_controller joint_trajectory_pos_controller left_arm right_arm"/-->
+<arg name="controllers" default="joint_state_controller left_arm right_arm"/>
 <arg name="hardware_interface" default="PositionJointInterface"/>
 
 <include file="$(find gazebo_ros)/launch/empty_world.launch">

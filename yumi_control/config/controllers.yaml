@@ -58,7 +58,7 @@ joint_trajectory_vel_controller:
 
 # Left Arm
 left_arm:
-  type: "velocity_controllers/JointTrajectoryController"
+  type: "position_controllers/JointTrajectoryController"
   joints:
     - yumi_joint_1_l
     - yumi_joint_2_l
@@ -70,7 +70,7 @@ left_arm:
 
 # Right Arm
 right_arm:
-  type: "velocity_controllers/JointTrajectoryController"
+  type: "position_controllers/JointTrajectoryController"
   joints:
     - yumi_joint_1_r
     - yumi_joint_2_r

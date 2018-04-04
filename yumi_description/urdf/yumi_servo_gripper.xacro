@@ -129,7 +129,7 @@
 
      <!--Extensions -->
     <xacro:yumi_servo_gripper_gazebo name="${name}" />
-    <xacro:yumi_servo_gripper_transmission name="${name}" hardware_interface="${hardware_interface}"/>
+    <xacro:yumi_servo_gripper_transmission name="${name}" hardware_interface="hardware_interface/${hardware_interface}"/>
 
   </xacro:macro>
 

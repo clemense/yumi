@@ -5,6 +5,8 @@
   <arg name="db" default="false" />
   <!-- Allow user to specify database location -->
   <arg name="db_path" default="$(find yumi_moveit_config)/default_warehouse_mongo_db" />
+  <!-- Disable grippers -->
+  <arg name="no_grippers" default="false" />
 
   <!-- By default, we are not in debug mode -->
   <arg name="debug" default="false" />
@@ -52,7 +54,12 @@
 </include>
 
 <!-- the urdf/sdf parameter -->
-<param name="robot_description" command="$(find xacro)/xacro.py $(find yumi_description)/urdf/yumi_nogrippers.urdf.xacro prefix:=$(arg hardware_interface)"/>
+<param if="$(arg no_grippers)"
+       name="robot_description"
+       command="$(find xacro)/xacro.py $(find yumi_description)/urdf/yumi_nogrippers.urdf.xacro prefix:=$(arg hardware_interface)"/>
+<param unless="$(arg no_grippers)"
+       name="robot_description"
+       command="$(find xacro)/xacro.py $(find yumi_description)/urdf/yumi.urdf.xacro prefix:=$(arg hardware_interface)"/>
 
 <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model yumi"  respawn="false" output="screen" />
 

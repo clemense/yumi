@@ -23,7 +23,7 @@ controller_list:
       - yumi_joint_6_r
   - name: "right_gripper"
     type: GripperCommand
-    action_ns: gripper_action
+    action_ns: gripper_cmd
     default: true
     parallel: true
     joints:
@@ -31,7 +31,7 @@ controller_list:
       - gripper_r_joint_m
   - name: "left_gripper"
     type: GripperCommand
-    action_ns: gripper_action
+    action_ns: gripper_cmd
     default: true
     parallel: true
     joints:

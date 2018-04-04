@@ -18,7 +18,6 @@
         <joint name="yumi_joint_4_l" />
         <joint name="yumi_joint_5_l" />
         <joint name="yumi_joint_6_l" />
-        <!--joint name="yumi_link_7_l_joint" /-->
     </group>
     <group name="right_arm">
         <joint name="world_joint" />
@@ -29,7 +28,6 @@
         <joint name="yumi_joint_4_r" />
         <joint name="yumi_joint_5_r" />
         <joint name="yumi_joint_6_r" />
-        <!--joint name="yumi_link_7_r_joint" /-->
     </group>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="world_joint" type="fixed" parent_frame="world" child_link="yumi_body" />

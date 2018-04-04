@@ -80,3 +80,22 @@ right_arm:
     - yumi_joint_5_r
     - yumi_joint_6_r
 
+left_gripper:
+  gripper_action:
+    type: "robot_controllers/ParallelGripperController"
+    centering:
+      p: 1000.0
+      d: 0.0
+      i: 0.0
+      i_clamp: 0.0
+
+right_gripper:
+  gripper_action:
+    type: "robot_controllers/ParallelGripperController"
+    centering:
+      p: 1000.0
+      d: 0.0
+      i: 0.0
+      i_clamp: 0.0
+
+

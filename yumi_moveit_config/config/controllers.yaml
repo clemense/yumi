@@ -21,3 +21,19 @@ controller_list:
       - yumi_joint_4_r
       - yumi_joint_5_r
       - yumi_joint_6_r
+  - name: "right_gripper"
+    type: GripperCommand
+    action_ns: gripper_action
+    default: true
+    parallel: true
+    joints:
+      - gripper_r_joint
+      - gripper_r_joint_m
+  - name: "left_gripper"
+    type: GripperCommand
+    action_ns: gripper_action
+    default: true
+    parallel: true
+    joints:
+      - gripper_l_joint
+      - gripper_l_joint_m

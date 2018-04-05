@@ -86,9 +86,10 @@
       </visual>
 
       <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="-0.005 0.005 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://yumi_description/meshes/gripper/coarse/finger.stl"/>
+          <cylinder length="0.1" radius="0.005"/>
+          <!--mesh filename="package://yumi_description/meshes/gripper/coarse/finger.stl"/-->
         </geometry>
         <material name="Grey"/>
       </collision>
@@ -126,9 +127,10 @@
       </visual>
 
       <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="-0.005 0.005 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://yumi_description/meshes/gripper/coarse/finger.stl"/>
+          <cylinder length="0.1" radius="0.005"/>
+          <!--mesh filename="package://yumi_description/meshes/gripper/coarse/finger.stl"/-->
         </geometry>
         <material name="Grey"/>
       </collision>
